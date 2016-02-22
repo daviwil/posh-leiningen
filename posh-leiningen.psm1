@@ -45,7 +45,8 @@ function Invoke-Leiningen {
             "upgrade",
             "vcs",
             "version",
-            "with-profile")]
+            "with-profile",
+            "figwheel" <# Need a way to dynamically scrape available commands and use TabExpansion++ #>)]
         $Command,
 
         [Parameter(ValueFromRemainingArguments = $true)]
